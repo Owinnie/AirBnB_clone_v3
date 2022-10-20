@@ -156,11 +156,12 @@ No known bugs at this time.
 ## Authors
 Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
+  
 Ouma Winnie - [Github](https://github.com/Owinnie) / [Twitter](https://twitter.com/tilla50206255)
 
 Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
 
-Have a restful experince using this application
+### Have a restful experince using this application
 ================================================
