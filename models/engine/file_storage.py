@@ -55,7 +55,7 @@ class FileStorage:
                 jo = json.load(f)
             for key in jo:
                 self.__objects[key] = classes[jo[key]["__class__"]](**jo[key])
-        except:
+        except Exception:
             pass
 
     def get(self, cls, id):
@@ -75,7 +75,7 @@ class FileStorage:
         if not cls:
             for a_cls_name in all_cls_names:
                 cnt += len(models.storage.all(a_cls_name).values())
-        else:# if cls
+        else:  # if cls
             cnt += len(models.storage.all(cls).values())
         return cnt
 
