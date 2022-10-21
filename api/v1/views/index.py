@@ -23,11 +23,12 @@ def status():
 @app_views.route('/api/v1/stats', strict_slashes=False)
 def stats():
     """Get no. of objs in storage using .count()"""
-    ls_of_cls = {"amenities": Amenity,
-                 "cities": City,
-                 "places": Place,
-                 "reviews": Review,
-                 "states": State,
-                 "users": User}
-    cnt_dict = {k: storage.count(v) for k, v in ls_of_cls.items()}
-    return jsonify(cnt_dict)
+    classes = {"amenities": Amenity, "cities": City,
+               "places": Place, "reviews": Review,
+               "states": State, "users": User}
+    json_dict = {}
+
+    for name, cls in classes.items():
+        json_dict.update({name: storage.count(cls)})
+
+    return jsonify(json_dict)
