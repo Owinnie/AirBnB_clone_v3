@@ -54,7 +54,6 @@ class Place(BaseModel, Base):
 
     def __init__(self, *args, **kwargs):
         """initializes Place"""
-        super().__init__(*args, **kwargs)
         if kwargs:
             if kwargs.get("city_id", None) is None:
                 self.city_id = str(uuid.uuid4())
@@ -63,6 +62,7 @@ class Place(BaseModel, Base):
         else:
             self.city_id = str(uuid.uuid4())
             self.user_id = str(uuid.uuid4())
+        super().__init__(*args, **kwargs)
 
     if models.storage_t != 'db':
         @property
