@@ -159,7 +159,7 @@ Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://tw
   
 Ouma Winnie - [Github](https://github.com/Owinnie) / [Twitter](https://twitter.com/tilla50206255)
 
-Second part of Airbnb: Joann Vuong
+Loretta Dhahabu - [Github](https://github.com/loretta-dhahabu)
 ## License
 Public Domain. No copy write protection. 
 
