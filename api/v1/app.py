@@ -16,6 +16,7 @@ def teardown(error):
     """Call storage.close()"""
     storage.close()
 
+
 @app.errorhandler(404)
 def not_found(error):
     return make_response(jsonify({'error': 'Not Found'}), 404)
